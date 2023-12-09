@@ -10,6 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <ChakraProvider>
+        
         <App />
       </ChakraProvider>
     </BrowserRouter>

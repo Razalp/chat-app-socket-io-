@@ -1,17 +1,20 @@
 // App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {Router, Route } from 'react-router-dom';
 
 import './App.css';
 import Home from './componets/Home';
+import Chat from './componets/Chat';
 
 
 const App = () => {
   return (
     <div className='App'>
-      <Router>
-        <Route path='/' exact component={Home} /> {/* Add 'exact' for an exact match */}
-      </Router>
+      <h1>hwello</h1>
+     <Router>
+        <Route path='/' component={Home} /> 
+        <Route path='/chat' component={Chat}/>
+        </Router>
     </div>
   );
 }
