@@ -1,0 +1,14 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@100&family=Slabo+27px&display=swap');
+ .App{
+    min-height: 100vh;
+    display: flex;
+    background-image: url('./bg-image.png');
+    background-size: contain;
+    background-position: center;
+ }
+ .chatbg{
+    background-color: rgba(0, 0, 0, 0.1);
+ }
+ 
+ 
+ 
