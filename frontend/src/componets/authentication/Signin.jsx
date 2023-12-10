@@ -65,6 +65,17 @@ const Signin = () => {
             </InputRightElement>
             </InputGroup>
         </FormControl>
+
+        <FormControl id='photo'>
+            <FormLabel>
+                Chooice profile photo
+            </FormLabel>
+                <Input
+                type='file' p={1.5} accept='image/*' onChange={(e)=>postDetails(e.target.value)}>
+
+                </Input>
+           
+        </FormControl>
 <br />
         <Button colorScheme='blue' width='100%'  onClick={handleSubmit}>Submit</Button>
       
