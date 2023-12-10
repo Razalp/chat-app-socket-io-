@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import {Router, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import Home from './componets/Home';
@@ -9,13 +9,13 @@ import Chat from './componets/Chat';
 
 const App = () => {
   return (
-    <div className='App'>
-      <h1>hwello</h1>
-     <Router>
-        <Route path='/' component={Home} /> 
-        <Route path='/chat' component={Chat}/>
-        </Router>
-    </div>
+  
+      // <h1>hwello</h1>
+     <Routes>
+        <Route path='/' element={<Home/>} /> 
+        <Route path='/chat' element={<Chat/>}/>
+        </Routes>
+  
   );
 }
 
