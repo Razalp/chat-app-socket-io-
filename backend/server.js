@@ -14,8 +14,8 @@ connectDB()
 app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(errorMiddleware.notFound)
-app.use(errorMiddleware.errorHandler)
+// app.use(errorMiddleware.notFound)
+// app.use(errorMiddleware.errorHandler)
 app.get('/',(req,res)=>{
     res.send('api is runing')
 })

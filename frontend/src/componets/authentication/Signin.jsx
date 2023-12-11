@@ -89,7 +89,8 @@ const Signin = () => {
                     "Content-type": "application/json"
                 },
             };
-            const { data } = await axios.post('http://localhost:5000/', { name, email, password, photo }, config);
+            const { data } = await axios.post('http://localhost:5000/signIn', { name, email, password, photo }, config);
+            console.log(data)
             toast({
                 title: 'Registration successful.',
                 status: 'success',
