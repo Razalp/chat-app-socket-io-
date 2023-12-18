@@ -5,6 +5,7 @@ const cors=require('cors');
 const { default: mongoose } = require('mongoose');
 const connectDB = require('./config/db');
 const userRoutes=require('./routues/UserRoutes')
+const chatRoutes=require('./routues/chatRoutes')
 const errorMiddleware=require('./middlewares/errorHandel')
 dotenv.config();
 const PORT =process.env.PORT || 5000
@@ -20,6 +21,7 @@ app.get('/',(req,res)=>{
 })
 
 app.use('/',userRoutes)
+app.use('/chat',chatRoutes)
 
 // app.get('/chat',(req,res)=>{
 //     res.send(chats)
